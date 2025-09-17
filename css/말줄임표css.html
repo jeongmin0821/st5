@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>말줄임표css</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .box{
+      margin: 50px;
+      padding: 1em;
+      background-color: #ccc;
+    }
+    .box1{
+      /* white-space: normal; */
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      -webkit-line-clamp: 3;
+      width: 80%;
+      height: 60px;
+    }
+    .box2{
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .box3, .box4, .box5{
+      width: 400px;
+      height: 40px;
+    }
+    .box3{overflow: visible;}
+    .box4{overflow: hidden;}
+    .box5{overflow: auto;}
+  </style>
+</head>
+<body>
+  <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad consequatur officiis autem, eveniet unde nisi pariatur asperiores odit ut illum eligendi facilis minus voluptas, alias nemo eum, rerum voluptatibus impedit laboriosam doloribus nihil, mollitia ea veritatis. Sapiente necessitatibus, nostrum ratione repellendus optio non doloremque itaque eius, maiores, exarchitecto.</div>
+  <div class="box box2">Nobis vero nisi ad eos aperiam culpa eaque repudiandae nemo sapiente. Quas laborum atque veniam quasi voluptas, facilis tempore fugit quia asperiores nihil praesentium molestiae accusantium neque assumenda, fugiat quod.</div>
+  <hr>
+  <div class="box box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nihil sunt vel id voluptate eos sit recusandae saepe commodi distinctio, debitis iusto. Nesciunt voluptatibus asperiores consequatur, tenetur repellat sunt vero.</div>
+  <div class="box box4">Repudiandae quisquam illo accusantium nulla necessitatibus ut amet temporibus impedit laboriosam doloribus nihil, mollitia ea veritatis. Sapiente necessitatibus, nostrum ratione repellendus optio non doloremque itaque eius, maiores, ex accusantium reiciendis.</div>
+  <div class="box box5">Ab est, necessitatibus officiis alias totam, architecto voluptas porro quidem nulla incidunt dolores esse unde culpa minima repellendus? Iste ipsa dicta voluptate debitis sunt sed molestiae praesentium perspiciatis labore repudiandae!</div>
+</body>
+</html>
