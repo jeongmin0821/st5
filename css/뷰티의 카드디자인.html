@@ -13,18 +13,22 @@
     /* 이미지 크기 처리 방식 */
     .ec-base-product{
       width: auto;
+      /* background-color: #0f0;
+      border: 1px solid #080;
+      padding: 10px 0; */
     }
     .prdList{
       width: auto;
-      background-color: #333;
+      /* background-color: #333;  */
+      margin: 0 -10px;
       font-size: 0;
       line-height: 0;
     }
     .prdList>li{
       display: inline-block;
       width: 33.333%;
-      background-color: #ccc;
-      border: 1px solid #f00;
+      /* background-color: #ccc;
+      border: 1px solid #f00; */
       box-sizing: border-box;
 
       font-size: 1rem;
@@ -33,6 +37,8 @@
     }
     .ec-base-product .prdList__item{
       padding: 0 10px;
+      position: relative;
+      overflow: hidden;
     }
     .ec-base-product .prdList__item .thumbnail{}
     .ec-base-product .prdList__item .thumbnail a{
@@ -43,9 +49,27 @@
       width: 100%;
     }
     .ec-base-product .prdList__item .description{
+      box-sizing: border-box;
+      /* ㄴ 보더+패딩+콘텐트(w+h) = 위드쓰 */
+      padding: 0.8em 1em;
       background-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      left: 10px; bottom: 0;
+      width: calc(100% - 20px);
+      transform: translateY(100%);
+      opacity: 0.5;
+      transition: 0.3s;
     }
-    .ec-base-product .prdList__item .description .name{}
+     .ec-base-product .prdList__item:hover .description{
+      /* left: 10px; bottom: 0; -> 동일값 생략 */
+      transform: translateY(0%);
+      opacity: 1;
+      transition: 1s;
+     }
+    .ec-base-product .prdList__item .description .name{
+      margin-bottom: 0.5em;
+      font-weight: bold;
+    }
     .ec-base-product .prdList__item .description .spec{}
     .ec-base-product .prdList__item .description .spec li{}
   </style>
