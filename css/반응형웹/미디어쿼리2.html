@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>미디어쿼리 2 - 모바일 우선(오름차순)</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    .container{
+      margin: 30px;
+      background-color: #ccc;
+    }
+    h1{
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      padding: 0.5em;
+    }
+
+    @media(min-width: 768px){
+      /* = @media(min-width: 768px) and (max-width: 1023px) */
+      .container{
+        background-color: #ef6;
+      }
+    }/* @media(min-width: 768px) */
+    /* ㄴ> 미디어의 너비가 768 이상일 때 디자인 css */
+    @media(min-width: 1024px){
+      .container{
+        background-color: #6fe;
+      }
+      h1{
+        font-size: 3em;
+      }
+    }/* @media(min-width: 1024px) */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>모바일 우선</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui quasi quia sunt nulla quibusdam, ipsa hic totam cupiditate architecto illo aliquam nam tenetur? Eveniet doloribus enim delectus nostrum amet molestias.</p>
+    <p>모바일 우선은 @media조건 없이 작성하는 화면, 모바일 화면스타일을 작업한다는 의미</p>
+  </div>
+</body>
+</html>

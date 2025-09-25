@@ -14,14 +14,41 @@
     }
     .media-txt{
       position: fixed;
-      right: 50px; top: 50px;
+      left: 50px; top: 50px;
       background-color: #fff;
       border: 1px solid #000;
       border-radius: 0.5em;
       padding: 0.5em;
+      z-index: 100;
     }
     .media-txt::before{
-      content: "pc";
+      content: "wide desk";
+    }
+    @media(max-width: 1199.98px){
+      .media-txt::before{
+        content: "desk";
+      }
+    }
+    @media(max-width: 1023.98px){
+      .media-txt::before{
+        content: "tablet";
+      }
+    }
+    @media(max-width: 767.98px){
+      .media-txt::before{
+        content: "mobile";
+      }
+    }
+    /* @media(max-width: 576.98px){
+      .media-txt::before{
+        content: "mobile";
+      }
+    } */
+    @media(max-width: 576.98px) and (orientation: portrait){
+      .media-txt{left: 30px; top: 20px;}
+      .media-txt::before{
+        content: "mobile portrait";
+      }
     }
     .media-box{
       position: absolute;
@@ -38,6 +65,8 @@
       background-color: rgba(255, 255, 255, 0.3);
       /* 모서리 둥글게 */
       border-radius: 20px;
+      /* 그림자 넣기 */
+      box-shadow: 0px 0px 30px 4px rgba(0, 0, 0, 0.4);
     }
     .media-box .media-wrap{
       width: auto;
@@ -50,6 +79,35 @@
       width: 100%; height: 100%;
       object-fit: cover;
       object-position: center;
+    }
+
+    /* media-query */
+    @media(max-width: 1199.98px){
+      /* 1200px 보다 너비가 작은 미디어에 적용 */
+      .container{
+       background: #ED53A8;
+       background: linear-gradient(147deg, rgba(237, 83, 168, 0) 0%, rgba(237, 83, 168, 1) 100%);
+      }
+    }
+/*********
+@media(max-width: 767.98px)
+********/
+    @media(max-width: 767.98px){
+      .container{
+        background: #ef6;
+      }
+      .media-box{
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .media-box .media-wrap{
+        border-radius: 12px;
+      }
+    }
+    @media(max-width: 576.98px) and (orientation: portrait){
+      .media-box .media-wrap{
+        aspect-ratio: 3/4;
+      }
     }
   </style>
 </head>
