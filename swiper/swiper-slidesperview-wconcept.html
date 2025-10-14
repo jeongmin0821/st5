@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>swiper-slidesperview-wconcept</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <style>
+    * {margin: 0;padding: 0;}
+    body {margin-top: 50px;}
+
+    .visual-section {
+      overflow: hidden;
+    }
+
+    .myslide.swiper {
+      width: 80%;
+      overflow: visible;
+    }
+
+    .swiper-wrapper {
+      /* gap: 20px; */
+    }
+
+    /* .swiper-wrapper(view)안에 내가 원하는 크기의 슬라이드를 포함하게 하기 위해서는 슬라이드의 너비 지정 -> slidesPerView: 'auto' 지정 */
+    .swiper-slide {
+      opacity: 0.5;
+      filter: grayscale(70%);
+    }
+
+    .swiper-slide.swiper-slide-active {
+      opacity: 1;
+      filter: grayscale(0);
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: calc(100vh - 170px);
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Slider main container -->
+  <div class="visual-section">
+    <div class="swiper myslide">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=1" alt=""></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=2" alt=""></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=3" alt=""></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=4" alt=""></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=5" alt=""></div>
+        <div class="swiper-slide"><img src="https://picsum.photos/800/600?random=6" alt=""></div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+  <script>
+    const myslide = new Swiper('.myslide', {
+
+      slidesPerView: 'auto', //swiper-slide의 크기를 지정해야 함
+      spaceBetween: 30,
+      centeredSlides: true,
+      // 무한반복
+      loop: true,
+
+      // 수평 슬라이드
+      direction: 'horizontal',
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        // type: 'fraction',
+        // type: 'progressbar',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
+</body>
+
+</html>
