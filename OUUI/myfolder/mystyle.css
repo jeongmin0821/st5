@@ -8,6 +8,9 @@ mystyle
   box-sizing: border-box;
   /* border: 1px solid #f00; */
 }
+.main_product_slide .ec-base-product .prdList{
+  flex-wrap: nowrap;
+}
 
 .ec-base-product .prdList > li{
   flex: none;
@@ -128,4 +131,84 @@ card-border-no-margin
   min-height: 100px; /* 중요 */
   box-sizing: border-box;
   padding: 0 16px;
+}
+
+/********* 
+section 관련 스타일 수정 
+*/
+
+.section{
+  --section-bg: beige;
+  --section-padding-top-bottom: 40px;
+  --section-main-banner-padding: 16px;
+}
+
+#contents > .section_full_content_center{
+  background-color: var(--section-bg);
+  width: 100%;
+  max-width: none;
+  padding-top: var(--section-padding-top-bottom);
+  padding-bottom: var(--section-padding-top-bottom);
+}
+
+#contents > .section_full_content_center .main_3dan_banner .main_banner_txt{
+  margin-top: 0;
+  padding: var(--section-main-banner-padding);
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+@media(min-width: 1024px){
+  #contents > .section_full_content_center > div{
+   max-width: 1230px;
+   width: 92%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
+
+#contents > .section_full_only_content{
+  background-color: var(--section-bg);
+  width: 100%;
+  max-width: none;
+  padding-top: var(--section-padding-top-bottom);
+  padding-bottom: var(--section-padding-top-bottom);
+}
+
+@media(min-width: 1024px){
+  #contents > .section_full_only_content > .main_title{
+   max-width: 1230px;
+   width: 92%;
+   margin-left: auto;
+   margin-right: auto;
+  }
+}
+
+/********  
+visual-swiper hero section
+*/
+
+.visual_section{
+  --visual-swiper-width: 100%;
+}
+
+@media(min-width: 1024px){
+  #contents > .visual_section{
+    max-width: none;
+    width: 100%;
+  }
+} 
+
+.visual_section .visual_swiper{
+  width: var(--visual-swiper-width);
+}
+.visual_section .swiper .swiper-slide{}
+.visual_section .swiper-slide picture{
+  display: block;
+}
+.visual_section .swiper-slide picture source,
+.visual_section .swiper-slide picture source img{
+  display: block;
+  width: 100%; height: auto;
+  max-width: none;
 }
