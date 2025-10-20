@@ -86,42 +86,42 @@
     <!--@import(/layout/basic/header.html)-->
     <!--@import(/layout/basic/sidebar.html)-->
     <div id="container">
-      <div id="contents">
+      <div id="contents" class="ub-style">
 
         <!-- 여기에 콘텐츠 -->
-        <section class="section visual_section">
-          <div class="swiper visual_swiper">
+        <section class="section visual_section section_full">
+          <div class="swiper visual_swiper ub-swiper ub-swiper-controls-bottom">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/OUUI/myfolder/images/img1.png" media="(min-width: 768px)">
-                  <img src="/OUUI/myfolder/images/img1-m.png" alt="">
+                  <source srcset="/OUUI/myfolder/images/img1-m.png" media="(max-width: 768px)">
+                  <img src="/OUUI/myfolder/images/img1.png" alt="">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/OUUI/myfolder/images/img2.png" media="(min-width: 768px)">
-                  <img src="/OUUI/myfolder/images/img2-m.png" alt="">
+                  <source srcset="/OUUI/myfolder/images/img2-m.png" media="(max-width: 768px)">
+                  <img src="/OUUI/myfolder/images/img2.png" alt="">
                 </picture>
               </div>
               <div class="swiper-slide">
                 <picture>
-                  <source srcset="/OUUI/myfolder/images/img3.png" media="(min-width: 768px)">
-                  <img src="/OUUI/myfolder/images/img3-m.png" alt="">
+                  <source srcset="/OUUI/myfolder/images/img3-m.png" media="(max-width: 768px)">
+                  <img src="/OUUI/myfolder/images/img3.png" alt="">
                 </picture>
               </div>
             </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="ub-swiper-controls">
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
           </div>
         </section>
 
@@ -168,13 +168,17 @@
       // Optional parameters
       direction: 'horizontal',
       loop: true,
+      centereSlides: true,
+      sildesPerView: 'auto',
+      // html에서 transform: scale()을 사용하면 spaceBetween 금지
+      // spaceBetween: 30,
       // autoplay: {
       //   delay: 2500,
       //   disableOnInteraction: false,
       // },
       pagination: {
         el: '.swiper-pagination',
-        // type: 'fraction',
+        type: 'fraction',
         // type: 'progressbar',
       },
 
