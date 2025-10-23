@@ -14,7 +14,9 @@
   <meta http-equiv="Pragma" content="no-cache" />
   <!-- // PG크로스브라우징필수내용 -->
 
-  <title>사용자 단처리</title>
+  <title>탭메뉴 연습</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="">
 
   <link rel="stylesheet" href="/OUUI/layout/basic/css/common.css"><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
@@ -31,7 +33,8 @@
   <link rel="stylesheet" href="/OUUI/layout/basic/css/ec-base-product.css">
   <link rel="stylesheet" href="/OUUI/layout/basic/css/ec-base-prdInfo.css">
   <link rel="stylesheet" href="/OUUI/layout/basic/css/ec-base-paginate.css">
-  <link rel="stylesheet" href="/OUUI/layout/basic/css/main.css">
+  <link rel="stylesheet" href="/myfolder/css/ub-variables.css">
+  <link rel="stylesheet" href="/myfolder/css/ub-grid-system.css">
 
   <!-- --------------------- -->
   <!--@css(/layout/basic/css/common.css)--><!-- 해당 CSS는 쇼핑몰 전체 페이지에 영향을 줍니다. 삭제와 수정에 주의해주세요. -->
@@ -85,56 +88,56 @@
     <!--@import(/layout/basic/sidebar.html)-->
     <div id="container">
       <div id="contents">
-        <section class="section ub-dan section_full_only_content">
-          <!-- 사용자 1단 처리 -->
-           <div class="ub-dan-wrapper">
-            <div class="ub-dan-row row">
-              <div class="ub-dan-item col-12">
-                <img src="/myfolder/images/img1.png" alt="">
+        <!-- 메인 콘텐츠 영역 -->
+        <!--@contents-->
+
+        <section class="section main_product_category tab-horizontal" data-ez-module="product-list-category/2" data-ez-layout="grid4"
+          data-ez="contents-13wlyn9-1">
+
+          <div class="main_product_inner">
+            <div class="main_title ez-align-center" data-ez-role="ez-align" data-ez-align="center">
+              <!-- 메인 베스트셀러 수정하는곳 -->
+              <div class="main_title_txt01" data-ez-role="title">베스트 아이템</div>
+              <div class="main_title_txt02" data-ez-role="subtitle">가장 많이 선택한 아이템</div>
+            </div><!-- //main_title -->
+
+            <ul class="main_product_tab" data-ez-role="tab-list">
+              <li data-ez-role="tab-item"><button type="button" class="button active" data-id="tabContent1"
+                  data-ez-role="name" data-name="스킨">가나다라마바사</button></li>
+              <li data-ez-role="tab-item"><button type="button" class="button" data-id="tabContent2" data-ez-role="name"
+                  data-name="로션">로션</button></li>
+              <li data-ez-role="tab-item"><button type="button" class="button" data-id="tabContent3" data-ez-role="name"
+                  data-name="크림">크림</button></li>
+
+            </ul><!-- //main_product_tab -->
+          </div><!-- //main_product_inner -->
+
+          <div class="content_list" data-ez-role="content-list">
+            <div class="tabcontent active" id="tabContent1" data-ez-role="content-item">
+              <div data-ez-holder="product_listmain">
+               탭콘텐츠1
               </div>
             </div>
-           </div>
-          </section>
 
-        <section class="section ub-dan section_full_content_center">
-          <!-- 사용자 1단 처리 -->
-           <div class="ub-dan-wrapper">
-            <div class="ub-dan-row row">
-              <div class="ub-dan-item col-12">
-                <img src="/myfolder/images/img1.png" alt="">
+            <div class="tabcontent" id="tabContent2" data-ez-role="content-item">
+              <div data-ez-holder="product_listmain">
+                탭콘텐츠2
               </div>
             </div>
-           </div>
-          </section>
-          
-          <section class="section ub-dan">
-            <!-- 사용자 2단 처리 -->
-            <div class="ub-dan-wrapper">
-             <div class="ub-dan-row row">
-               <div class="ub-dan-item col-6 col-md-12">
-                 <img src="/myfolder/images/img1.png" alt="">
-               </div>
-               <div class="ub-dan-item col-6 col-md-12">
-                 <img src="/myfolder/images/img2.png" alt="">
-               </div>
-             </div>
+
+            <div class="tabcontent" id="tabContent3" data-ez-role="content-item">
+              <div data-ez-holder="product_listmain">
+                탭콘텐츠3
+              </div>
             </div>
+
+          </div><!-- //content-list -->
         </section>
 
-        <section class="section ub-dan">
-          <!-- 사용자 3단 처리 -->
-           <div class="ub-dan-wrapper">
-            <div class="ub-dan-row row md-scroll">
-              <div class="ub-dan-item col-4">아이템1<img src="/myfolder/images/img1-m.png" alt=""></div>
-              <div class="ub-dan-item col-4">아이템2<img src="/myfolder/images/img2-m.png" alt=""></div>
-              <div class="ub-dan-item col-4">아이템3<img src="/myfolder/images/img3-m.png" alt=""></div>
-            </div>
-           </div>
-          <!-- 사용자 4단 처리 -->
-        </section>
+
       </div>
-   </div>
-<!--@import(/layout/basic/footer.html)-->
+    </div>
+    <!--@import(/layout/basic/footer.html)-->
   </div><!-- //wrap -->
 
   <div class="layer_shadow" id="layer_shadow"></div>
@@ -145,9 +148,8 @@
   <link rel="stylesheet" href="/OUUI/layout/basic/css/add_theme02.css">
   <link rel="stylesheet" href="/OUUI/layout/basic/css/add_theme03.css">
   <link rel="stylesheet" href="/OUUI/layout/basic/css/add_layout.css">
-  
   <link rel="stylesheet" href="/myfolder/mystyle.css">
-  <script src="/myfolder/js/myscript.js"></script>
+  <link rel="stylesheet" href="/OUUI/tab.css">
 
   <!-- ---------------------------------------- -->
   <!--@css(/layout/basic/css/sub_style.css)-->
