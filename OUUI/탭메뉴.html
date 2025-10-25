@@ -158,6 +158,23 @@
   <!--@css(/layout/basic/css/add_theme02.css)-->
   <!--@css(/layout/basic/css/add_theme03.css)-->
   <!--@css(/layout/basic/css/add_layout.css)-->
+
+  <script>
+    // 탭메뉴 테스트를 위한 스크립트 복사
+    jQuery(document).ready(function () {
+      /* 메인 탭카테고리 */
+	jQuery(".main_product_tab li").bind("click", function () {
+		jQuery(this).parent().find('li button').removeClass("active");
+		jQuery(this).parents('.main_product_category').find('.content_list .tabcontent').removeClass("active");
+		jQuery('button', this).addClass("active");
+		var activeTab = jQuery('button', this).attr("data-id");
+		jQuery(this).parents('.main_product_category').find('.content_list .tabcontent' + '#' + activeTab).addClass("active");
+	});
+	jQuery('.main_product_category .main_product_inner .main_product_tab li button, .content_list .tabcontent').removeClass('active'); // 나머지 탭 숨김
+	jQuery('.main_product_category .main_product_inner .main_product_tab li:first-child button, .content_list .tabcontent:first-child').addClass('active'); // 첫번째 탭 오픈
+    });
+  </script>
+
 </body>
 
 </html>
