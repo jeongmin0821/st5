@@ -1,0 +1,128 @@
+
+  @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+  body {
+    margin-top: 50px;
+    /* 삭제 */
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.005em;
+    background: #FFF;
+    color: #1A1A1A;
+  }
+
+  #footer .inner .bt_info,
+  #footer .inner .bt_info a {
+    font-weight: 400;
+    color: #1A1A1A;
+  }
+
+  .bt_info_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .bt_info_list .info_list_top {}
+
+  .bt_info_list .info_list_bottom {
+    position: absolute;
+    transform: translateY(65%);
+  }
+
+  #footer .inner .bt_util li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+
+
+  #footer .inner {
+    border-top: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    padding: 0;
+    position: relative;
+  }
+
+  #footer .inner .footer_left {
+    border-right: 1px solid #000;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 16px;
+    min-height: 500px;
+  }
+
+  #footer .inner .footer_left .button {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+  }
+
+  #footer .inner .bt_util {
+    display: block;
+    margin-top: 0;
+  }
+
+  #footer .inner .bt_util li {
+    padding: 3px 0;
+    margin: 0;
+  }
+
+
+  #footer .inner .footer_left .bt_info {
+    color: #1f1f1f;
+  }
+
+  .bt_sns_box {
+    margin-top: 10px;
+    /*변수로 지정*/
+  }
+
+  .bt_sns_box a img {
+    width: 1.8em;
+  }
+
+  #footer .inner .bt_logo {
+    /* flex-basis: auto; */
+  }
+
+  #footer .inner .footer_right.bt_logo {
+    height: 100%;
+    overflow: hidden;
+    width: 999999px;
+  }
+
+  .text {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #footer .inner .footer_right.bt_logo .text-item {
+    /* height: auto; */
+    /* max-width: 200px; */
+    width: 100%;
+    height: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0px 0px;
+    min-height: 250px;
+    transform: translateY(-13%);
+  }
+
+    .bt_sns a[data-ez-item="instagram"]{
+      background-image: url(/soroi/image/icon_insta.png);
+    }
+    .bt_sns a[data-ez-item="kakao"]{
+      background-image: url(/soroi/image/icon_kakao.png);
+    }

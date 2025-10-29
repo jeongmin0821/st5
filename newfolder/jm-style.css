@@ -1,0 +1,224 @@
+  @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+
+  /* 미표시 영역 */
+  #footer .bt_logo,
+  .inner .bt_util ul li[data-ez-item="company"],
+  .inner .bt_util ul li[data-ez-item="guide"],
+  .bt_tel .bt_title,
+  .bt_tel .bt_txt01[data-ez-item="runtime"],
+  .bt_tel .bt_txt01 strong,
+  .bt_tel .bt_txt03,
+  .bt_info .bt_title,
+  .bt_info .bt_info_list span[data-ez-role="field"],
+  .bt_info .bt_info_list div[data-ez-item="phone"],
+  .bt_info .bt_info_list div[data-ez-item="company_regno"],
+  .bt_info .bt_info_list div[data-ez-item="network_regno"],
+  .bt_info .bt_info_list div[data-ez-item="cpo_name"],
+  .bt_copyright,
+  .bt_sns .bt_title,
+  .bt_sns a[data-ez-item="facebook"],
+  .bt_sns a[data-ez-item="kakao"],
+  .bt_sns a[data-ez-item="twitter"],
+  .bt_sns a[data-ez-item="blog"] {
+    display: none !important;
+  }
+
+  #footer {
+    font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.005em;
+    background: #FFF;
+    color: #1A1A1A;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  #footer .inner {
+    margin: 0;
+    padding: 0;
+    max-width: 5000px;
+    width: 100%;
+    color: #1a1a1a;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+
+  #footer .inner .in_left {
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  #footer .inner .in_left .info_wrap1 {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    justify-content: space-around;
+    margin: 0 0 0 20px;
+    padding: 10px 0 20px 0;
+  }
+
+  #footer .inner .in_left .bt_info {
+    text-align: left;
+    display: flex;
+  }
+
+  #footer .inner .bt_info .bt_info_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  #footer .inner .bt_info .bt_info_list>div {
+    margin: 0 0 0 10px;
+    max-width: 300px;
+  }
+
+  #footer .inner .bt_util {
+    margin-bottom: 5px;
+  }
+
+  #footer .inner .bt_util ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #footer .inner .bt_tel .bt_txt01 {
+    margin-top: 5px;
+}
+
+  #footer .inner .bt_sns {
+    padding-top: 5px;
+  }
+
+  #footer .inner .bt_sns a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    background: no-repeat center/contain;
+    background-image: url(/myfolder/images/youtube_logo.png);
+    text-indent: -999999px;
+  }
+
+
+  #footer .inner .bt_sns a[data-ez-item="instagram"] {
+    background-image: url(/newfolder/images/icon_insta.png);
+  }
+
+  #footer .inner .bt_sns a[data-ez-item="youtube"] {
+    background-image: url(/newfolder/images/icon_youtube.png);
+  }
+
+
+  #footer .inner .in_left .info_wrap2 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    align-items: flex-end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+
+  }
+
+
+  #footer .inner .in_right {
+    border-top: 1px solid #000;
+    margin: 0 0;
+    max-height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+
+
+
+  /* 전체 컨테이너 */
+  #move_container {
+    margin: 200px auto;
+    width: 100vw;
+    overflow: hidden;
+  }
+
+  /* text 덩어리의 전체 부분 */
+  /* 가로배치 */
+  #move_text {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  /* text 한 덩어리 */
+  .move_text_item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 0px 10px;
+    transform: translateY(-18%);
+  }
+
+
+
+  /* 미디어쿼리 */
+  @media (max-width: 1024px) {
+    #container #contents {
+      width: 100%;
+    }
+
+    #footer .inner {
+      flex-wrap: wrap;
+    }
+
+    #footer .inner .in_left,
+    #footer .inner .in_right {
+      flex-basis: 100%;
+      border-right: none;
+      max-height: 250px;
+    }
+
+    #footer .inner .in_left .info_wrap2 {
+      padding: 25px 20px 20px;
+    }
+
+    #footer .inner .bt_info {
+      margin-bottom: 0;
+    }
+
+    #footer .inner .bt_info .bt_info_list {
+      margin-top: 10px;
+    }
+
+    #footer .inner .bt_tel .bt_txt01 {
+      margin-top: 0;
+    }
+  }
+
+  @media (max-width: 500px) {
+    #footer .inner .bt_info .bt_info_list {
+      max-width: 150px;
+    }
+  }
+
+  @media (max-width: 350px) {
+    #footer .inner .bt_info .bt_info_list {
+      max-width: 50px;
+    }
+  }
