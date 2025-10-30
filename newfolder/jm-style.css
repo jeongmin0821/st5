@@ -1,6 +1,3 @@
-  @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
-
-
   /* 미표시 영역 */
   #footer .bt_logo,
   .inner .bt_util ul li[data-ez-item="company"],
@@ -20,10 +17,12 @@
   .bt_sns a[data-ez-item="facebook"],
   .bt_sns a[data-ez-item="kakao"],
   .bt_sns a[data-ez-item="twitter"],
-  .bt_sns a[data-ez-item="blog"] {
+  .bt_sns a[data-ez-item="blog"], .footer_margin {
     display: none !important;
   }
 
+
+  /* footer 영역 */
   #footer {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
     font-weight: 400;
@@ -98,12 +97,12 @@
     align-items: flex-end;
   }
 
+  #footer .inner .bt_util ul li {
+    margin-bottom: 15px;
+  }
+
   #footer .inner .bt_tel .bt_txt01 {
     margin-top: 5px;
-}
-
-  #footer .inner .bt_sns {
-    padding-top: 5px;
   }
 
   #footer .inner .bt_sns a {
@@ -172,12 +171,107 @@
     flex-grow: 0;
     flex-shrink: 0;
     padding: 0px 10px;
-    transform: translateY(-18%);
+    transform: translateY(-15%);
+  }
+
+   /* main 영역 */
+   .main-mg0 .footer_margin {
+    margin-top: 0;
+   }
+
+   #contents > section[data-ez-name="CUSTOM HTML"]{
+    width: 100%;
+    margin: 0;
+    max-width: 5000px;
+   }
+
+   .ub-dan-item.col-3 {
+    border: none;
+    width: 50%;
+    padding: 0;
+    }
+
+    .ub-dan-row{
+ 
+    }
+    
+    .ub-dan-row img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .ub-dan-row .image-overlay{
+    
+    }
+
+    .ub-dan-row .image-overlay p{
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    display: inline-block;
+    max-width: 92%;
+    font-size: 15px;
+    line-height: 19px;
+    z-index: 10;
+    transition: all 0.3s ease;
+    opacity: 0;
+    }
+
+    .ub-dan-row:hover .image-overlay p{
+    /* .image-container에 마우스를 올리면(.hover) 
+       그 안의 .image-overlay의 투명도를 1(100%)로 변경 */
+    opacity: 1;
+    }
+
+
+    div[app4you-smart-banner="smart-banner-admin-PC00008"]{
+      border-top: 1px solid #000;
+      border-right: 1px solid #000;
+      position: relative;
+    }
+    div[app4you-smart-banner="smart-banner-admin-PC00009"]{
+      border-top: 1px solid #000;
+      position: relative;
+    }
+
+
+  .xans-smart-banner-admin {
+    margin: 0;
+   }
+  .ub-dan-item{
+    display: flex;
+
   }
 
 
 
-  /* 미디어쿼리 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /******* 미디어쿼리 */
   @media (max-width: 1024px) {
     #container #contents {
       width: 100%;
@@ -195,7 +289,7 @@
     }
 
     #footer .inner .in_left .info_wrap2 {
-      padding: 25px 20px 20px;
+      padding: 25px 15px 20px;
     }
 
     #footer .inner .bt_info {
@@ -208,6 +302,10 @@
 
     #footer .inner .bt_tel .bt_txt01 {
       margin-top: 0;
+    }
+
+    #footer .inner .bt_util ul li {
+    margin-bottom: 10px;
     }
   }
 
