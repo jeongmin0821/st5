@@ -1,0 +1,45 @@
+<aside id="aside" module="layout_slidePackage" data-ez="contents-1mnx329-1">
+    <!--@css(/layout/basic/css/slideMenu.css)-->
+    <!--@js(/layout/basic/js/slide_menu.js)-->
+    <nav class="navigation-menu" role="navigation">
+		<div module="Layout_multishopList">
+			<button type="button" class="toggle">{$current_language} <i aria-hidden="true" class="icon icoArrowRight"></i></button>
+			<ul module="Layout_multishopListitem">
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+				<li class="{$selected_class}">
+					<a href="//{$shop_domain}/">{$locale_language}</a>
+				</li>
+			</ul>
+		</div><!-- //Layout_multishopList -->
+
+		<div class="navigation_state" data-ez-group="top-util-menu" data-ez-role="list">
+			<a data-ez-item="join" module="Layout_statelogoff" href="/member/agreement.html">회원가입</a>
+			<a data-ez-item="login" module="Layout_statelogoff" href="/member/login.html">로그인</a>
+			<a data-ez-item="modify" module="Layout_stateLogon" href="/member/modify.html">내정보수정</a>
+			<a data-ez-item="logout" module="Layout_stateLogon" href="{$action_logout}">로그아웃</a>
+			<a data-ez-item="order" href="/myshop/order/list.html">주문조회</a>
+			<a data-ez-item="mypage" module="Layout_stateLogon" href="/myshop/index.html">마이페이지</a>
+			<a data-ez-item="recent" href="/product/recent_view_product.html">최근본상품</a>
+		</div><!-- //navigation_state -->
+
+		<div class="tab_inner">
+			<a class="open" id="slide_category" href="javascript:;">카테고리</a>
+			<a id="slide_community" href="javascript:;">고객센터</a>
+		</div><!-- //tab_inner -->
+
+		<div data-ez-module="menu-side/1"><div id="slideCateList" class="navigation-menu__category">
+  <ul id="slide_add_category"><li><a href="/category/ROAD-BIKE/42/" class="view">ROAD BIKE</a><ul class="sub_cate01"><li><a href="/category/ROAD-BIKE-1/46/" class="view">ROAD BIKE 1</a></li><li><a href="/category/ROAD-BIKE-2/47/" class="view">ROAD BIKE 2</a></li><li><a href="/category/ROAD-BIKE-3/48/" class="view">ROAD BIKE 3</a></li></ul></li><li><a href="/category/ELECTRIC-BICYCLE/43/" class="view">ELECTRIC BICYCLE</a></li><li><a href="/category/MTB/44/" class="view">MTB</a></li><li><a href="/category/ACCESSORY/45/" class="view">ACCESSORY</a></li></ul>
+  </div></div><!-- //menu-side/1 -->
+
+        <div module="Layout_BoardInfo" class="tab_community navigation-menu__board">
+            <ul>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+                <li><a href="{$link_board_list}">{$board_name}</a> {$board_adult_icon}</li>
+            </ul>
+        </div><!-- //tab_community -->
+    </nav>
+    <button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
+</aside>
+<!--#ez="1/4"-->
