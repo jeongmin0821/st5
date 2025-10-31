@@ -17,7 +17,7 @@
   .bt_sns a[data-ez-item="facebook"],
   .bt_sns a[data-ez-item="kakao"],
   .bt_sns a[data-ez-item="twitter"],
-  .bt_sns a[data-ez-item="blog"], .footer_margin {
+  .bt_sns a[data-ez-item="blog"]{
     display: none !important;
   }
 
@@ -174,8 +174,17 @@
     transform: translateY(-15%);
   }
 
+
+
+
+
+
    /* main 영역 */
-   .main-mg0 .footer_margin {
+   #container #contents > .section {
+    max-width: 99999px;
+}
+
+   body.main .footer_margin {
     margin-top: 0;
    }
 
@@ -201,24 +210,25 @@
       height: 100%;
     }
     
-    .ub-dan-row .image-overlay{
-    
-    }
 
+    .ub-dan-row .image-overlay{
+      position: absolute;   
+      bottom: 20px;
+    }
+    
     .ub-dan-row .image-overlay p{
-    position: absolute;
-    left: 30px;
-    bottom: 20px;
-    display: inline-block;
-    max-width: 92%;
-    font-size: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 19px;
-    z-index: 10;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+    bottom: 0;
     transition: all 0.3s ease;
     opacity: 0;
     }
 
-    .ub-dan-row:hover .image-overlay p{
+    .ub-dan-item:hover .image-overlay p{
     /* .image-container에 마우스를 올리면(.hover) 
        그 안의 .image-overlay의 투명도를 1(100%)로 변경 */
     opacity: 1;
@@ -229,10 +239,12 @@
       border-top: 1px solid #000;
       border-right: 1px solid #000;
       position: relative;
+      width: 100%;
     }
     div[app4you-smart-banner="smart-banner-admin-PC00009"]{
       border-top: 1px solid #000;
       position: relative;
+      width: 100%;
     }
 
 
@@ -307,16 +319,44 @@
     #footer .inner .bt_util ul li {
     margin-bottom: 10px;
     }
-  }
 
-  @media (max-width: 500px) {
-    #footer .inner .bt_info .bt_info_list {
-      max-width: 150px;
+    /* 메인 스마트배너 대형 이미지 */
+    
+
+
+
+  /* 배너마스터 중간 이미지 */
+    .row{
+      margin: 0;
+    }
+    .ub-dan-row.md-scroll {
+      flex-direction: column;
+    }
+    .ub-dan-row.md-scroll .ub-dan-item {
+    width: 100%;
+    max-width: 100vw;
+    }
+    div[app4you-smart-banner="smart-banner-admin-PC00009"] {
+     border-top: none;
     }
   }
 
-  @media (max-width: 350px) {
-    #footer .inner .bt_info .bt_info_list {
-      max-width: 50px;
+
+  /* footer .in_left 높이 조정 영역 */
+  @media (max-width: 500px) {
+    #footer .inner .in_left{
+      flex-direction: column;
+    }
+    #footer .inner .in_left .info_wrap2 {
+     position: static;
+   }
+     #footer .inner .bt_tel {
+      margin-bottom: 0;
+    }
+    #footer .inner .in_left .info_wrap2 {
+      padding: 0px 15px 20px;
+    }
+    #footer .inner .in_left, #footer .inner .in_right {
+      max-height: none;
     }
   }
