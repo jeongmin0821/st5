@@ -1,4 +1,6 @@
   /* 미표시 영역 */
+  .toparea.display_pc_only,
+  .bx-controls-direction,
   #footer .bt_logo,
   .inner .bt_util ul li[data-ez-item="company"],
   .inner .bt_util ul li[data-ez-item="guide"],
@@ -20,9 +22,39 @@
   .bt_sns a[data-ez-item="blog"]{
     display: none !important;
   }
+  /**************** 퀵메뉴버튼 영역 */
+  
+    .go-btn {
+    position: fixed;
+    right: 0;
+    bottom: 80px;
+    z-index: 1000;
+  }
+
+    .go-btn>a {
+      display: block;
+      height: 40px;
+      padding: 0;
+    }
+
+    .go-btn .btn-wrap {
+      width: 100%;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #000;
+    }
+
+    .go-btn img {
+      display: inline-block;
+      width: 25px;
+      padding: 10px;
+      background-color: #000;
+      box-sizing: content-box;
+      vertical-align: 0;
+    }/* //퀵메뉴버튼 영역 */
 
 
-  /* footer 영역 */
+  /**************** footer 영역 */
   #footer {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif' !important;
     font-weight: 400;
@@ -124,6 +156,10 @@
     background-image: url(/newfolder/images/icon_youtube.png);
   }
 
+  #footer .inner .bt_sns a[data-ez-item="kakao"] {
+    background-image: url(/newfolder/images/icon_kakao.png);
+  }
+
 
   #footer .inner .in_left .info_wrap2 {
     display: flex;
@@ -147,17 +183,13 @@
     flex-wrap: wrap;
   }
 
-
-
-  /* 전체 컨테이너 */
+  /* 로고 js */
   #move_container {
     margin: 200px auto;
     width: 100vw;
     overflow: hidden;
   }
 
-  /* text 덩어리의 전체 부분 */
-  /* 가로배치 */
   #move_text {
     list-style: none;
     display: flex;
@@ -166,27 +198,31 @@
     width: 100%;
   }
 
-  /* text 한 덩어리 */
   .move_text_item {
     flex-grow: 0;
     flex-shrink: 0;
     padding: 0px 10px;
     transform: translateY(-15%);
-  }
+  } /* //footer 영역 */
 
 
 
+ 
+  
 
-
-
-   /* main 영역 */
+  /**************** main 영역 */
+  body.main .footer_margin {
+   margin-top: 0;
+  } /* 메인페이지 푸터 마진 제거 */
+   
    #container #contents > .section {
     max-width: 99999px;
-}
-
-   body.main .footer_margin {
-    margin-top: 0;
    }
+
+   .xans-smart-banner-admin{
+    border-top: 1px solid #000;
+   }
+
 
    #contents > section[data-ez-name="CUSTOM HTML"]{
     width: 100%;
@@ -201,7 +237,7 @@
     }
 
     .ub-dan-row{
- 
+      margin: 0;
     }
     
     .ub-dan-row img{
@@ -213,27 +249,23 @@
 
     .ub-dan-row .image-overlay{
       position: absolute;   
-      bottom: 20px;
+      bottom: 17px;
     }
     
     .ub-dan-row .image-overlay p{
-    padding-left: 20px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 19px;
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+      font-size: 17px;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 5px #fff, 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 55px #000, 0 0 75px #000;
+    padding-left: 17px;
     bottom: 0;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     opacity: 0;
     }
 
     .ub-dan-item:hover .image-overlay p{
-    /* .image-container에 마우스를 올리면(.hover) 
-       그 안의 .image-overlay의 투명도를 1(100%)로 변경 */
     opacity: 1;
     }
-
 
     div[app4you-smart-banner="smart-banner-admin-PC00008"]{
       border-top: 1px solid #000;
@@ -242,20 +274,16 @@
       width: 100%;
     }
     div[app4you-smart-banner="smart-banner-admin-PC00009"]{
-      border-top: 1px solid #000;
+      border-top: none;
       position: relative;
       width: 100%;
     }
-
-
   .xans-smart-banner-admin {
     margin: 0;
    }
   .ub-dan-item{
     display: flex;
-
-  }
-
+  }  /* //main 영역 */
 
 
 
@@ -265,26 +293,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /******* 미디어쿼리 */
+  /****************미디어쿼리 */
   @media (max-width: 1024px) {
+    .go-btn{
+      display: none;
+    }
+
     #container #contents {
       width: 100%;
     }
@@ -298,6 +312,10 @@
       flex-basis: 100%;
       border-right: none;
       max-height: 250px;
+    }
+
+    #footer .inner .bt_tel {
+      margin-bottom: 0;
     }
 
     #footer .inner .in_left .info_wrap2 {
@@ -319,9 +337,41 @@
     #footer .inner .bt_util ul li {
     margin-bottom: 10px;
     }
+     #footer .inner .bt_sns a[data-ez-item="kakao"] {
+     display: block !important;
+    }
 
-    /* 메인 스마트배너 대형 이미지 */
-    
+
+
+
+
+  /* 메인 스마트배너 대형 이미지 */
+     .xans-smart-banner-admin{
+   width: 100%;
+   min-height: 600px;
+   }
+
+   .smart-banner-wrapper{
+    height: 100%;
+    overflow: hidden;
+   }
+
+   .smart-banner-bx-wrapper img {
+    min-height: 600px;
+   }
+
+  li a picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+li a picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
 
 
 
@@ -335,15 +385,38 @@
     .ub-dan-row.md-scroll .ub-dan-item {
     width: 100%;
     max-width: 100vw;
+    position: relative;
+    }
+    div[app4you-smart-banner="smart-banner-admin-PC00008"] {
+      border-right: none;
     }
     div[app4you-smart-banner="smart-banner-admin-PC00009"] {
      border-top: none;
     }
-  }
+
+    .ub-dan-row .image-overlay {
+    padding-left: 15px;
+    }
+
+    .ub-dan-row .image-overlay p {
+      opacity: 1;
+      position: absolute;
+      display: contents;
+      font-size: 15px;
+     font-weight: 500;
+    }
+
+  } /* //@media (max-width: 1024px) */
+
 
 
   /* footer .in_left 높이 조정 영역 */
   @media (max-width: 500px) {
+    #footer .inner .in_left .info_wrap1{
+      max-width: 200px;
+    }  
+  }
+  @media (max-width: 350px) {
     #footer .inner .in_left{
       flex-direction: column;
     }
