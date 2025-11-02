@@ -1,4 +1,5 @@
   /* 미표시 영역 */
+  .top_mypage a:first-child,
   .toparea.display_pc_only,
   .bx-controls-direction,
   #footer .bt_logo,
@@ -22,8 +23,9 @@
   .bt_sns a[data-ez-item="blog"]{
     display: none !important;
   }
+
+
   /**************** 퀵메뉴버튼 영역 */
-  
     .go-btn {
     position: fixed;
     right: 0;
@@ -52,6 +54,77 @@
       box-sizing: content-box;
       vertical-align: 0;
     }/* //퀵메뉴버튼 영역 */
+
+  /**************** header 영역 */
+  #header{
+  border-bottom: 1px solid #000 !important;
+}
+
+#header .inner .top_nav_box .top_logo img {
+    max-height: 80px !important;
+}
+
+#header .inner .top_nav_box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+#header .inner .top_nav_box .top_logo img {
+    max-width: 500px;
+    max-height: 70px;
+    padding-bottom: 5px;
+}
+
+#header .inner .top_nav_box .top_category > ul {
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+}
+
+#header .inner .top_nav_box .top_category > ul > li > a {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 40px;
+  padding-top: 3px;
+}
+
+#header .inner .top_nav_box .top_category .sub-category-box {
+   font-family: "Archivo Black", sans-serif;
+  }
+#header .inner .top_nav_box .top_category .sub-category{
+flex-direction: column;
+}
+
+
+  #header .inner .top_nav_box .top_category {
+    margin-left: 25px;
+}
+
+  #header .inner .top_nav_box {
+position: relative;
+    max-height: 70px;
+}
+
+#header .inner .top_nav_box div[data-ez-module='menu-main/1'] {
+    width: 100%;
+}
+
+  #header .inner .top_nav_box .top_mypage {
+    margin-left: 0;
+    position: absolute;
+    right: 0;
+}
+
+#header .inner .top_nav_box .top_category > ul > li:last-child {
+    right: 100px;
+    position: absolute;
+}
+
+
+
+
+
+
 
 
   /**************** footer 영역 */
@@ -219,11 +292,6 @@
     max-width: 99999px;
    }
 
-   .xans-smart-banner-admin{
-    border-top: 1px solid #000;
-   }
-
-
    #contents > section[data-ez-name="CUSTOM HTML"]{
     width: 100%;
     margin: 0;
@@ -245,7 +313,10 @@
       width: 100%;
       height: 100%;
     }
-    
+
+    .smart-banner-bx-wrapper img {
+    max-height: 1200px;
+   }
 
     .ub-dan-row .image-overlay{
       position: absolute;   
@@ -283,7 +354,36 @@
    }
   .ub-dan-item{
     display: flex;
-  }  /* //main 영역 */
+  }  
+  
+
+/* 메인 페이지네이션 버튼 영역 */
+.bx-pager-item {
+    background-image: url(/newfolder/images/bt_01.png);
+    background-color: transparent; 
+    width: 30px; 
+    height: 20px; 
+    opacity: 1;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.smart-banner-bx-wrapper .bx-pager.bx-default-pager a{
+  width: 30px !important;
+  height: 20px !important;
+  margin: 0 !important;
+  background: transparent !important;
+}
+.smart-banner-bx-wrapper .bx-pager.bx-default-pager a.active {
+    background-image: url(/newfolder/images/bt_02.png) !important;
+    background-color: transparent;
+    width: 30px !important; 
+    height: 20px !important; 
+    opacity: 1;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}/* //main 영역 */
 
 
 
@@ -302,6 +402,34 @@
     #container #contents {
       width: 100%;
     }
+   #header.fixed {
+     border-bottom: 1px solid #000 !important;
+    }
+    #header .inner {
+    max-height: 60px;
+  }
+
+    #header .inner .top_nav_box {
+    justify-content: space-around;
+   }
+
+    #header .inner .top_nav_box div[data-ez-module='menu-main/1']{
+    display: none;
+    }
+    .bottom-nav__top--show {
+        opacity: 0;
+      }
+    .bottom-nav__tabBar {
+      display: none !important;
+    }
+   #header .inner .top_nav_box .top_mypage {
+   position: static; 
+   }
+
+
+
+
+
 
     #footer .inner {
       flex-wrap: wrap;
@@ -395,15 +523,18 @@ li a picture img {
     }
 
     .ub-dan-row .image-overlay {
-    padding-left: 15px;
+    padding-left: 10px;
+    bottom: 13px;
     }
 
     .ub-dan-row .image-overlay p {
       opacity: 1;
       position: absolute;
       display: contents;
-      font-size: 15px;
-     font-weight: 500;
+      font-weight: 500;
+    }
+    .xans-smart-banner-admin {
+      min-height: 0;
     }
 
   } /* //@media (max-width: 1024px) */
