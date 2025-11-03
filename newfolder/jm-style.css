@@ -118,10 +118,19 @@ position: relative;
 }
 
 #header .inner .top_nav_box .top_category > ul > li:last-child {
-    right: 100px;
+    right: 80px;
     position: absolute;
 }
 
+.eSearch svg path{
+  stroke-width: 3;
+}
+
+.xans-layout-orderbasketcount svg path {
+    fill: #000;       
+    stroke: #000;    
+    stroke-width: 1.5; 
+}
 
 
 

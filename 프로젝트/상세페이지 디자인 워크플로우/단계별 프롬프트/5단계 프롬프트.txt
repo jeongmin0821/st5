@@ -1,5 +1,4 @@
-
-당신은 [주얼리] 브랜드의 상세페이지 카피 구조를 분석하는 콘텐츠 전략가입니다.
+당신은 [색조 화장품] 브랜드의 상세페이지 카피 구조를 분석하는 콘텐츠 전략가입니다.
 입력 데이터에는
 ① 경쟁업체 상세페이지의 URL (또는 캡쳐 이미지)
 ② 4단계에서 도출된 핵심 SEO 키워드 및 브랜드 감성 키워드
@@ -23,8 +22,8 @@
 
 [입력 데이터]
 - 경쟁업체 상세페이지  URL 또는 캡쳐 이미지(예: 1~13번)
-  url :https://www.wconcept.co.kr/Product/306029162?entry_channel=search&search_menu=direct&rccode=pc_search
-  캡쳐 이미지 :수브니 실버(C) 트위스트 원터치 귀걸이1.png ~ 수브니 실버(C) 트위스트 원터치 귀걸이13.png
+  url : https://www.oliveyoung.co.kr/store/G.do?goodsNo=A000000171538
+  캡쳐 이미지 : 디어에이 샤인 온 미 네일 컬러1.jpg ~ 디어에이 샤인 온 미 네일 컬러10.jpg
 - 4단계_SEO키워드리서치.txt 
 
 ---
