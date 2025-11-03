@@ -75,7 +75,6 @@
     max-height: 70px;
     padding-bottom: 5px;
 }
-
 #header .inner .top_nav_box .top_category > ul {
   display: flex;
   height: 80px;
@@ -88,6 +87,9 @@
   padding-top: 3px;
 }
 
+#header .inner .top_nav_box .top_category > ul > li:hover > a:after{
+  display: none;
+}
 #header .inner .top_nav_box .top_category .sub-category-box {
    font-family: "Archivo Black", sans-serif;
   }
@@ -315,7 +317,7 @@ position: relative;
     }
 
     .smart-banner-bx-wrapper img {
-    max-height: 1200px;
+    max-height: 900px;
    }
 
     .ub-dan-row .image-overlay{
