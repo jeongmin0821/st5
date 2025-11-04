@@ -1,11 +1,12 @@
   /* 변수 지정 */
   :root {
     --border-color: #1a1a1a;
+    --point-color: #ffdae0;
   }
 
   /* 선택 영역 색 조정 */
   ::selection {
-    background: pink !important;
+    background: var(--point-color) !important;
   }
 
 
@@ -148,8 +149,26 @@
     stroke-width: 1.5;
   }
 
+/* 헤더 상위 카테고리 링크 이동 불가 */
+a[href="/skin-skin7/category/SHOP/60/"],
+a[href="/skin-skin7/category/INFO/69/"],
+a[href="/skin-skin7/category/LOGINMY/78/"] {
+    pointer-events: none; 
+    cursor: default; }
 
+    #header .inner .top_nav_box .top_category .sub-category-box {
+    border-top: none;
+    top: 71px;
+}
 
+#header .inner .top_nav_box .top_category>ul>li:last-child .sub-category-box {
+  top: 76px;
+}
+
+#header .inner .top_nav_box .top_category > ul > li ul > li:hover{
+  filter: blur(1.5px);
+
+}
 
 
 
@@ -423,16 +442,33 @@
 
   /* //메인 페이지 영역 */
 
-
+/* 전체 페이지 효과 */
+div[data-ez-module="product-head-breadcrumb/1"],
+div[data-ez="module-1i8sthu-1"]{
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+div[data-ez-module="product-head-breadcrumb/1"] > ol,
+div[data-ez="module-1i8sthu-1"] > ol {
+  float: left;
+  margin-left: 58px;
+}
+div[data-ez-module="product-head-breadcrumb/1"] > ol > li a,
+div[data-ez="module-1i8sthu-1"] > ol > li a {
+    font-size: 13px;
+    color: #000000;
+  }
 
 
   /* 상품 분류 페이지 */
+  #Product_ListMenu{margin: 0 80px;}
   #container #contents>.section {
     width: 100%;
   }
 
   .ec-base-product .prdList .thumbnail .sale_box {
-    background-color: #000;
+    background-color: pink;
   }
 
   .ec-base-product .prdList {
@@ -476,15 +512,15 @@
     padding: 1px;
   }
 
-  .ec-base-product .prdList .xans-record-:nth-child(4) .description {
-    padding: 17px 17px 39px;
+  .ec-base-product .prdList .xans-record-:nth-child(5) .thumbnail,
+  .ec-base-product .prdList .xans-record-:nth-child(6) .thumbnail,
+  .ec-base-product .prdList .xans-record-:nth-child(7) .thumbnail,
+  .ec-base-product .prdList .xans-record-:nth-child(8) .thumbnail {
+    border-top: none;
   }
 
-  .ec-base-product .prdList .xans-record-:nth-child(1) .description,
-  .ec-base-product .prdList .xans-record-:nth-child(2) .description,
-  .ec-base-product .prdList .xans-record-:nth-child(3) .description,
   .ec-base-product .prdList .xans-record-:nth-child(4) .description {
-    border-bottom: none;
+    padding: 17px 17px 39px;
   }
 
   .ec-base-product .prdList__item .thumbnail .likeButton {
@@ -500,6 +536,21 @@
 
 
   /****************미디어쿼리 */
+  @media (min-width: 1681px) {
+    .ec-base-product .prdList .xans-record-:nth-child(1) .thumbnail,
+    .ec-base-product .prdList .xans-record-:nth-child(1) .description,
+    .ec-base-product .prdList .xans-record-:nth-child(5) .thumbnail,
+    .ec-base-product .prdList .xans-record-:nth-child(5) .description {
+      border-left: 1px solid var(--border-color);
+    }
+    .ec-base-product .prdList .xans-record-:nth-child(4) .thumbnail,
+    .ec-base-product .prdList .xans-record-:nth-child(4) .description,
+    .ec-base-product .prdList .xans-record-:nth-child(8) .thumbnail,
+    .ec-base-product .prdList .xans-record-:nth-child(8) .description {
+      border-right: 1px solid var(--border-color);
+    }
+  }/* 큰 화면에서 상품진열 border 재생성 */
+
   @media (max-width: 1024px) {
     .go-btn {
       display: none;
@@ -673,8 +724,12 @@
       border-right: 1px solid var(--border-color);
     }
 
+    .ec-base-product .prdList .xans-record-:nth-child(3) .thumbnail {
+      padding: 2px;
+    }
     .ec-base-product .prdList .xans-record-:nth-child(4) .thumbnail {
       padding: 0;
+      border-top: none;
     }
 
     .ec-base-product .prdList .xans-record-:nth-child(4) .thumbnail,
@@ -687,17 +742,8 @@
     }
 
 
-    .ec-base-product .prdList .xans-record-:nth-child(1) .description,
-    .ec-base-product .prdList .xans-record-:nth-child(2) .description,
-    .ec-base-product .prdList .xans-record-:nth-child(3) .description,
-    .ec-base-product .prdList .xans-record-:nth-child(4) .description,
-    .ec-base-product .prdList .xans-record-:nth-child(5) .description {
-      border-bottom: none;
-    }
-
     .ec-base-product .prdList .xans-record-:nth-child(4) .description {
-      padding-bottom: 0;
-      height: 100%;
+      max-height: 50.5px;
     }
 
     .ec-base-product .prdList .xans-record-:nth-child(6) .description {
@@ -731,23 +777,16 @@
       border-top: none;
     }
 
-    /* .ec-base-product .prdList .xans-record-:nth-child(1) .thumbnail{
-      padding: 1px;
-    }
-    .ec-base-product .prdList .xans-record-:nth-child(1) .description{
-     padding-bottom: 0;
-      height: 100%;
-    } */
-
-
-    .ec-base-product .prdList .xans-record-:nth-child(1) .description {
-      padding-bottom: 0;
-      height: 100%;
-    }
-
+  .ec-base-product .prdList .xans-record-:nth-child(2) .thumbnail {
+    padding: 2px;
+  }
   .ec-base-product .prdList .xans-record-:nth-child(3) .thumbnail {
-      padding: 1px;
-    }
+    padding: 1px;
+    border-top: none;
+  }
+  .ec-base-product .prdList .xans-record-:nth-child(4) .thumbnail {
+    padding: 3px;
+  }
 
    }
 
