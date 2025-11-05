@@ -69,157 +69,196 @@
   <!--@js(/js/common.js)-->
 </head>
 
-<body class="theme01" data-ez-theme="theme01">
-  <div id="skipNavigation">
-    <p><a href="#category">전체상품목록 바로가기</a></p>
-    <p><a href="#contents">본문 바로가기</a></p>
-  </div>
-  <div id="wrap">
-    <!--@import(/layout/basic/header.html)-->
-    <!--@import(/layout/basic/sidebar.html)-->
-    <div id="container" data-ez="layout-0ci18zt-1">
-      <div id="contents">
-        <span module="Layout_MobileAction" class="RTMB">
-          <a href="#none" onclick="{$go_back}"><!--@import(/svg/icon-go-back.html)-->뒤로가기</a>
-        </span>
-        <!--@contents-->
-<header id="header" class="layout1" data-ez-layout="layout1" data-ez="contents-0t99m1h-1">
-	
-	<div class="inner">
-		<div class="toparea display_pc_only">
-			<div class="toparea_shoppinginfo">
-				<!-- //Layout_multishopList -->
-
-				<div data-ez-group="shopping-info" data-ez-role="list">
-					<ul class="xans-element- xans-layout xans-layout-shoppinginfo "><li class="displaynone"><a href="/skin-skin7/myshop/mileage/historyList.html">적립금 <strong></strong></a></li>
-<li class="displaynone"><a href="/skin-skin7/myshop/deposits/historyList.html">예치금 <strong></strong></a></li>
-<li class="displaynone"><a href="/skin-skin7/myshop/coupon/coupon.html">쿠폰 <strong>0</strong></a></li>
-<li class="displaynone"><a href="/skin-skin7/myshop/wish_list.html">관심상품 <strong></strong></a></li>
-<li class="displaynone"></li>
-<li class="displaynone"><a href="/skin-skin7/order/basket.html">장바구니 <strong><span class="displaynone">()</span></strong></a></li>
+<div class="xans-element- xans-product xans-product-listnormal ec-base-product"><!--
+					$count = 8
+					※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+					※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+					$moreview = no
+					$cache = yes
+					$basket_result = /product/add_basket.html
+					$basket_option = /product/basket_option.html
+				-->
+<ul class="prdList grid4 ez-discount-tag-on" data-ez-role="layout ez-discount-tag" data-ez-discount-tag="on">
+					<!--
+※ 상품진열 공통소스
+-->
+<li id="anchorBoxId_53" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/warmth-of-the-sky/53/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/61a37286436dc7d93f5a11529777dd9a.jpg" id="eListPrdImage53_1" alt="WARMTH OF THE SKY" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_53"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="53" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_53">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="53" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('53','63', '1', 'A0000', false, '1', 'P00000CB', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="11600">
+			<div class="name"><a href="/skin-skin7/product/warmth-of-the-sky/53/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WARMTH OF THE SKY</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">11,600원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
 </ul>
-				</div>
-			</div><!-- //toparea_shoppinginfo -->
-
-			<div class="toparea_state" data-ez-group="top-util-menu" data-ez-role="list">
-												<a data-ez-item="modify" href="/skin-skin7/member/modify.html" class="xans-element- xans-layout xans-layout-statelogon ">내정보수정
-</a>
-				<a data-ez-item="logout" href="/skin-skin7/exec/front/Member/logout/" class="xans-element- xans-layout xans-layout-statelogon ">로그아웃
-</a>
-				<a data-ez-item="order" href="/skin-skin7/myshop/order/list.html">주문조회</a>
-				<a data-ez-item="mypage" href="/skin-skin7/myshop/index.html" class="xans-element- xans-layout xans-layout-statelogon ">마이페이지
-</a>
-				<a data-ez-item="recent" href="/skin-skin7/product/recent_view_product.html">최근본상품</a>
-				<div class="toparea_state_board">
-					<a data-ez-item="board" href="#none">고객센터 <i aria-hidden="true" class="icon icoArrowRight"></i></a>
-					<ul class="xans-element- xans-layout xans-layout-boardinfo"><li class="xans-record-"><a href="/skin-skin7/board/공지사항/1/">공지사항</a></li>
-<li class="xans-record-"><a href="/skin-skin7/board/상품-사용후기/4/">상품 사용후기</a></li>
-<li class="xans-record-"><a href="/skin-skin7/board/상품-qa/6/">상품 Q&amp;A</a></li>
-<li class="xans-record-"><a href="/skin-skin7/board/자유게시판/5/">자유게시판</a></li>
-<li class="xans-record-"><a href="/skin-skin7/board/갤러리/8/">갤러리</a></li>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_52" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/warmth-of-the-sky/52/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/f790394feda3bb3b74335011231c88b5.jpg" id="eListPrdImage52_1" alt="WARMTH OF THE SKY" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_52"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="52" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_52">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="52" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('52','63', '1', 'A0000', false, '1', 'P00000CA', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="12800">
+			<div class="name"><a href="/skin-skin7/product/warmth-of-the-sky/52/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WARMTH OF THE SKY</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">12,800원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
 </ul>
-				</div>
-			</div><!-- //toparea_state -->
-		</div><!-- //toparea -->
-
-		<div class="top_nav_box" id="top_nav_box">
-			<div class="xans-element- xans-layout xans-layout-logotop top_logo "><a href="/skin-skin7"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/upload/category/logo/v2_1d0e8b8d2a395c3c55121c33f6f6332b_mDLxxpokVa_top.jpg" alt="SOROI*" data-ez-eb="https://ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/upload/ezst/shop1/ez-logo-top.edibotbanner.json"></a>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_51" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/warmth-of-the-sky/51/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/9b0e5204a455efc24febf2b358bb46cf.jpg" id="eListPrdImage51_1" alt="WARMTH OF THE SKY" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_51"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="51" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_51">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="51" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('51','63', '1', 'A0000', false, '1', 'P00000BZ', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="14500">
+			<div class="name"><a href="/skin-skin7/product/warmth-of-the-sky/51/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WARMTH OF THE SKY</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">14,500원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_50" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/winters-promise/50/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/c296164995883566c54c675f9835fde6.jpg" id="eListPrdImage50_1" alt="WINTER&amp;#039;S PROMISE" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_50"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="50" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_50">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="50" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('50','63', '1', 'A0000', false, '1', 'P00000BY', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="11600">
+			<div class="name"><a href="/skin-skin7/product/winters-promise/50/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WINTER'S PROMISE</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">11,600원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_49" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/winters-promise/49/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/9df0af5bbc121820d7899a2655283a65.jpg" id="eListPrdImage49_1" alt="WINTER&amp;#039;S PROMISE" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_49"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="49" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_49">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="49" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('49','63', '1', 'A0000', false, '1', 'P00000BX', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="12800">
+			<div class="name"><a href="/skin-skin7/product/winters-promise/49/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WINTER'S PROMISE</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">12,800원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_48" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/winters-promise/48/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/c8199ea31f70a94a2e709c6bec1813d3.jpg" id="eListPrdImage48_1" alt="WINTER&amp;#039;S PROMISE" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_48"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="48" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_48">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="48" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('48','63', '1', 'A0000', false, '1', 'P00000BW', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="14500">
+			<div class="name"><a href="/skin-skin7/product/winters-promise/48/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">WINTER'S PROMISE</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">14,500원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_47" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/painted-afternoon/47/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/03382b3bbea55bf3d36b4cb9325f6084.jpg" id="eListPrdImage47_1" alt="PAINTED AFTERNOON" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_47"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="47" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_47">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="47" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('47','63', '1', 'A0000', false, '1', 'P00000BV', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="11600">
+			<div class="name"><a href="/skin-skin7/product/painted-afternoon/47/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">PAINTED AFTERNOON</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">11,600원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+<li id="anchorBoxId_46" class="xans-record-">
+	<div class="prdList__item">
+		<div class="thumbnail">
+			<a href="/skin-skin7/product/painted-afternoon/46/category/63/display/1/"><img src="//ecimg.cafe24img.com/pg2183b65538952025/jeongmin0821/web/product/medium/20251023/c2a7a9664d077b3bb986fc69407d9038.jpg" id="eListPrdImage46_1" alt="PAINTED AFTERNOON" loading="lazy"></a>
+			<div class="likeButton likePrd likePrd_46"><button type="button"><img src="//img.echosting.cafe24.com/skin/admin_ko_KR/product/ico_likeit.png" class="likePrdIcon" product_no="46" category_no="63" icon_status="off" alt="좋아요 등록 전"> <strong><span class="likePrdCount likePrdCount_46">0</span></strong></button></div>
+			<div class="badge"><span></span></div>
+			<div class="icon__box">
+				<span class="wish"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_wish_before.png" class="icon_img ec-product-listwishicon" alt="관심상품 등록 전" productno="46" categoryno="63" icon_status="off" login_status="F" individual-set="F">WISH</span>
+				<span class="cart"><img src="//img.echosting.cafe24.com/design/skin/admin/ko_KR/btn_list_cart.gif" onclick="category_add_basket('46','63', '1', 'A0000', false, '1', 'P00000BU', 'A', 'F', '0');" alt="장바구니 담기" class="ec-admin-icon cart">ADD</span>
+				<span class="option" style="display: none;">OPTION</span>
+			</div>
+		</div>
+		<div class="description" ec-data-custom="" ec-data-price="12800">
+			<div class="name"><a href="/skin-skin7/product/painted-afternoon/46/category/63/display/1/" class=""><span class="title displaynone"><span class="" style="font-size:13px;color:#000000;">상품명</span> :</span> <span class="" style="font-size:13px;color:#000000;">PAINTED AFTERNOON</span></a></div>
+			<p class="ec-base-help txtWarn txt11 displaynone"> 단독구매상품</p>
+			<ul class="xans-element- xans-product xans-product-listitem spec"><li class=" xans-record-">
+					<strong class="title displaynone"><span class="" style="font-size:13px;color:#000000;font-weight:bold;">판매가</span> :</strong> <span class="" style="font-size:13px;color:#000000;font-weight:bold;">12,800원</span><span id="span_product_tax_type_text" style=""> </span>				</li>
+</ul>
+			<div class="icon">        </div>
+		</div>
+	</div>
+</li>
+				</ul>
 </div>
-<!-- //top_logo -->
-
-			<div data-ez-module="menu-main/1" data-ez-mode="manual">
-        <div class="xans-element- xans-layout xans-layout-category top_category">
-<ul><li><a href="/skin-skin7/category/SHOP/60/">SHOP</a><div class="sub-category-box" style="display: block;"><ul class="sub_cate01 sub-category"><li><a href="/skin-skin7/category/NEW/61/">NEW</a></li><li><a href="/skin-skin7/category/BEST/62/">BEST</a></li><li><a href="/skin-skin7/category/ALL/63/">ALL</a></li><li><a href="/skin-skin7/category/SET/64/">SET</a></li><li><a href="/skin-skin7/category/CHEEK/65/">CHEEK</a></li><li><a href="/skin-skin7/category/LIP/66/">LIP</a></li><li><a href="/skin-skin7/category/NAIL/67/">NAIL</a></li><li><a href="/skin-skin7/category/ACC/68/">ACC</a></li></ul></div></li><li><a href="/skin-skin7/category/INFO/69/">INFO</a><div class="sub-category-box" style="display: none;"><ul class="sub_cate01 sub-category"><li><a href="/skin-skin7/category/ABOUT/70/">ABOUT</a></li><li><a href="/skin-skin7/board/%EA%B0%A4%EB%9F%AC%EB%A6%AC/8/">COLLECTION</a></li><li><a href="https://www.instagram.com/minn82i/">INSTAGRAM</a></li><li><a href="https://jeongmin0821.cafe24.com/skin-skin7/board/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/1/">NOTICE</a></li><li><a href="/skin-skin7/category/CONTACT/74/">CONTACT</a></li><li><a href="https://jeongmin0821.cafe24.com/skin-skin7/board/%EC%83%81%ED%92%88-%EC%82%AC%EC%9A%A9%ED%9B%84%EA%B8%B0/4/">REVIEW</a></li></ul></div></li><li><a href="/skin-skin7/category/LOGINMY/78/">LOGIN/MY</a><div class="sub-category-box" style="display: none;"><ul class="sub_cate01 sub-category"><li><a href="https://jeongmin0821.cafe24.com/skin-skin7/member/login.html">LOGIN</a></li><li><a href="https://jeongmin0821.cafe24.com/skin-skin7/member/agreement.html">SIGN UP</a></li><li><a href="https://jeongmin0821.cafe24.com/skin-skin7/myshop/index.html">MY ACCOUNT</a></li></ul></div></li></ul>
-</div>
-      </div><!-- //menu-main/1 -->
-
-			<div class="top_mypage">
-				<a href="/skin-skin7/myshop/index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon" role="img">
-    <circle cx="11.5" cy="6.5" r="3.75" stroke="#000" stroke-width="1.5"></circle>
-    <path stroke="#000" stroke-width="1.5" d="M1.78 21.25c.382-4.758 4.364-8.5 9.22-8.5h1c4.856 0 8.838 3.742 9.22 8.5H1.78z"></path>
-</svg>
-</a>
-				<a href="/skin-skin7/order/basket.html" class="xans-element- xans-layout xans-layout-orderbasketcount "><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon" role="img">
-    <path fill="#000" d="M23.073 22.253l-1.946-14.31c-.04-.38-.368-.667-.758-.667h-3.656v-1.74c0-2.543-2.115-4.613-4.713-4.613-2.599 0-4.713 2.07-4.713 4.613v1.74H3.63c-.39 0-.717.288-.758.667L.927 22.253c-.022.21.047.42.192.577.144.157.35.247.566.247h20.63c.216 0 .421-.09.566-.247.145-.157.214-.366.192-.576zM8.81 5.537c0-1.72 1.431-3.122 3.19-3.122 1.758 0 3.19 1.401 3.19 3.122v1.74H8.81v-1.74zm-6.28 16.05l1.786-12.82h2.97v1.644c0 .412.342.746.762.746.421 0 .762-.334.762-.746V8.767h6.38v1.643c0 .412.34.746.761.746.42 0 .762-.334.762-.746V8.767h2.97l1.786 12.819H2.53z"></path>
-</svg>
-<span class="count displaynone EC-Layout_Basket-count-display"><span class="EC-Layout-Basket-count">0</span></span>
-</a>
-				<a href="javascript:;" class="eSearch"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon" role="img">
-    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 19c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"></path>
-    <path stroke="#000" stroke-linejoin="round" stroke-width="1.5" d="M22 22l-5-5"></path>
-</svg></a>
-			</div><!-- //top_mypage -->
-
-			<div class="top_sidebar">
-				<a href="javascript:;" class="eNavFold"><i aria-hidden="true" class="icon icoNav"></i></a>
-			</div><!-- //top_sidebar -->
-		</div><!-- //top_nav_box -->
-
-		<form id="searchBarForm" name="" action="/skin-skin7/product/search.html" method="get" target="_self" enctype="multipart/form-data">
-<input id="banner_action" name="banner_action" value="" type="hidden"><div class="xans-element- xans-layout xans-layout-searchheader " style="display: none;"><!--
-				$product_page=/product/detail.html
-				$category_page=/product/list.html
-			-->
-<fieldset>
-				<legend>검색</legend>
-				<div class="top_search_box">
-					<input id="keyword" name="keyword" fw-filter="" fw-label="검색어" fw-msg="" class="inputTypeText" placeholder="" onmousedown="SEARCH_BANNER.clickSearchForm(this)" value="" type="text"><button type="button" class="btnDelete displaynone">삭제</button><button type="button" class="btnSearch" onclick="SEARCH_BANNER.submitSearchBanner(this); return false;"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" class="icon" role="img">
-    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 19c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z"></path>
-    <path stroke="#000" stroke-linejoin="round" stroke-width="1.5" d="M22 22l-5-5"></path>
-</svg> 검색</button><ul class="autoDrop" id=""></ul>
-<button type="button" class="btnClose"><i aria-hidden="true" class="icon icoClose"></i>닫기</button>
-				</div>
-<!-- //top_search_box -->
-				<div class="search_title display_tablet_only">SEARCH</div>
-			</fieldset>
-</div>
-</form><!-- //Layout_SearchHeader -->
-	</div><!-- //inner -->
-</header>
-        <div data-ez-module="product-head-breadcrumb/1" data-ez="contents-17xgnms-1" class="xans-element- xans-product xans-product-headcategory section path "><span>현재 위치</span>
-<ol>
-		<li><a href="/skin-skin7">홈</a></li>
-		<li class=""><a href="/skin-skin7/category/shop/60/">SHOP</a></li>
-		<li class=""><a href="/skin-skin7/category/new/61/">NEW</a></li>
-		<li class="displaynone"><a href=""></a></li>
-		<li class="displaynone"><strong><a href=""></a></strong></li>
-	</ol>
-</div>
-        
-        <!--//@contents-->
-      </div>
-    </div>
-    <!--@import(/layout/basic/footer.html)-->
-    <!--#ez="1/1"-->
-  </div><!-- //wrap -->
-
-  <div class="layer_shadow" id="layer_shadow"></div>
-  <div class="layer_shadow" id="layer_shadow_search"></div>
-  <div id="layoutDimmed" class="dimmed"></div>
-
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_style.css">
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/sub_theme.css">
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme01.css">
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme02.css">
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_theme03.css">
-  <link rel="stylesheet" href="/프로젝트/layout/basic/css/add_layout.css">
-  <link rel="stylesheet" href="/newfolder/mystyle.css">
-  <link rel="stylesheet" href="/newfolder/jm-style.css">
-  
-  <script src="/newfolder/js/myscript.js"></script>
-  <script src="/newfolder/js/movingtext.js"></script>
-  <!--@js(/newfolder/js/myscript.js)-->
-	<!--@js(/newfolder/js/movingtext.js)-->
-
-
-  <!--@css(/layout/basic/css/sub_style.css)-->
-  <!--@css(/layout/basic/css/sub_theme.css)-->
-  <!--@css(/layout/basic/css/add_theme01.css)-->
-  <!--@css(/layout/basic/css/add_theme02.css)-->
-  <!--@css(/layout/basic/css/add_theme03.css)-->
-  <!--@css(/layout/basic/css/add_layout.css)-->
-
-
-</body>
 
 </html>
