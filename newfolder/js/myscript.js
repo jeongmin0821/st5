@@ -89,7 +89,6 @@ jQuery(document).ready(function ($) {
     }
   }
 
-
   // 다른 페이지/공통 스크립트는 여기 아래에 계속 작성
   // 예: if ($('.product-list').length) { ... }
 });

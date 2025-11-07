@@ -76,9 +76,7 @@ body.allmenu-mega #header.fixed {
   position: fixed !important;
 }
 
-#header.fixed .inner .top_nav_box .top_logo{
-  display: none;
-}
+
 body.allmenu-mega #header .inner .top_nav_box .top_mypage{
   bottom:0;
   top:auto;

@@ -69,11 +69,46 @@
 			<div class="top_logo" module="Layout_LogoTop"><a href="/"><img src="{$logo}" alt="{$mall_name}"></a></div><!-- //top_logo -->
 			<div class="top_nav"><a href="javascript:;" class="eNavFold"><i aria-hidden="true" class="icon icoNav"></i></a></div>
 
+<!-- GNB 왼쪽 햄버거 버튼 -->
+                <div class="hamburger_button show-pc">
+                  <button id="btnHamburger" class="btn-hamburger" type="button" aria-controls="allmenu" aria-expanded="true" aria-label="전체메뉴 열기" data-role="hamburger">
+                    <span class="hamburger_line"></span>
+                    <span class="hamburger_line"></span>
+                    <span class="hamburger_line"></span>
+                  </button>
+                </div>
+			<!-- //올메뉴를 위한 햄버거 -->
+
+
 			<div data-ez-module="menu-main/1" data-ez-mode="manual">
-        <div class="xans-element- xans-layout xans-layout-category top_category">
-<ul><li><a href="/category/%EC%8B%A0%EC%83%81%ED%92%88/58/">신상품</a></li><li><a href="/category/SHOP/60/">SHOP</a><ul class="sub_cate01"><li><a href="/category/CHEEK/65/">CHEEK</a></li></ul></li><li><a href="/category/INFO/69/">INFO</a></li><li><a href="/category/LOGINMY/78/">LOGIN/MY</a><ul class="sub_cate01"><li><a href="/category/LOGIN/80/">LOGIN</a></li><li><a href="/category/SIGN-UP/82/">SIGN UP</a></li><li><a href="/category/MY-ACCOUNT/83/">MY ACCOUNT</a></li></ul></li><li><a href="/project/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4/84/">기획전</a></li><li><a href="/shopinfo/company.html">소로이</a></li></ul>
-</div>
-      </div><!-- //menu-main/1 -->
+				<div class="xans-element- xans-layout xans-layout-category top_category">
+					<ul>
+						<li><a href="/category/%EC%8B%A0%EC%83%81%ED%92%88/58/">신상품</a></li>
+						<li><a href="/category/SHOP/60/">SHOP</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/CHEEK/65/">CHEEK</a></li>
+							</ul>
+						</li>
+						<li><a href="/category/INFO/69/">INFO</a></li>
+						<li><a href="/category/LOGINMY/78/">LOGIN/MY</a>
+							<ul class="sub_cate01">
+								<li><a href="/category/LOGIN/80/">LOGIN</a></li>
+								<li><a href="/category/SIGN-UP/82/">SIGN UP</a></li>
+								<li><a href="/category/MY-ACCOUNT/83/">MY ACCOUNT</a></li>
+							</ul>
+						</li>
+						<li><a href="/project/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4/84/">기획전</a></li>
+						<li><a href="/shopinfo/company.html">소로이</a></li>
+					</ul>
+				</div>
+			</div><!-- //menu-main/1 -->
+
+			<div>
+				<ul>
+					<li><a href="">회사 소개</a></li>
+					<li><a href="">오시는 길</a></li>
+				</ul>
+			</div>
 
 			<div class="top_mypage">
 				<a href="javascript:;" class="eSearch"><!--@import(/svg/icon-search.html)--></a>
@@ -81,6 +116,10 @@
 				<a href="/order/basket.html" module="Layout_orderBasketcount"><!--@import(/svg/icon-cart.html)--><span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
 			</div><!-- //top_mypage -->
 		</div><!-- //top_nav_box -->
+
+		<!-- 올메뉴메가 -->
+		<!--@import(/myfolder/allmenu.html)-->
+
 	</div><!-- //inner -->
 </header>
 <!--#ez="1/8"-->
