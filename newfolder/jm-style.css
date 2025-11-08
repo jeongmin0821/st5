@@ -27,6 +27,7 @@
   .xans-product-detail .infoArea table .sale_box,
   #totalProducts table .right,
   .xans-product-detail .infoArea .guideArea .info,
+  #CommonEvent3,
 
   /* header */
   .allmenu__item--title,
@@ -217,7 +218,7 @@
       width: 100%;
     }
 
-    .header_txt .move_text_item {
+    .header_txt .hd-text-item {
       font-style: italic;
       font-weight: 300;
       flex-grow: 0;
@@ -410,6 +411,7 @@ border-bottom: 1px solid var(--border-color);
     padding: 0px 10px;
     transform: translateY(-15%);
   }
+
 
   /* shippingreturns */
   .info_return{
@@ -838,7 +840,7 @@ border-bottom: 1px solid var(--border-color);
   }
 
   .xans-product-detail .eventArea img {
-    padding: 70px 0 100px;
+    padding: 50px 0 80px;
   }
 
   .detail_tab li.tab_open {
@@ -1176,6 +1178,9 @@ border-bottom: 1px solid var(--border-color);
     .xans-record-:last-child .description {
       border-top: none;
     }
+    /* 상품상세 */
+    #CommonEvent3{display: block !important;}
+    #CommonEvent2{display: none;}
 
   }
 
