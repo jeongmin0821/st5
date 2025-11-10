@@ -89,6 +89,27 @@ jQuery(document).ready(function ($) {
     }
   }
 
+        const follower = document.getElementById('cursor-follower');
+
+        document.addEventListener('mousemove', function(e) {
+    
+            follower.style.left = (e.clientX + 10) + 'px';
+            follower.style.top = (e.clientY + 10) + 'px';
+
+            /*
+            // [팁] 이미지 위치를 커서 오른쪽 아래로 살짝 옮기기
+            follower.style.left = (e.clientX + 10) + 'px';
+            follower.style.top = (e.clientY + 10) + 'px';
+            */
+        });
+
+        document.body.addEventListener('mouseenter', function() {
+            follower.style.opacity = 1; // GIF 보이기
+        });
+
+        document.body.addEventListener('mouseleave', function() {
+            follower.style.opacity = 0; // GIF 숨기기
+        });
 
   // 다른 페이지/공통 스크립트는 여기 아래에 계속 작성
   // 예: if ($('.product-list').length) { ... }
